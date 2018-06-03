@@ -34,28 +34,25 @@
                     <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="Свободных клеток (%):" GridPane.rowIndex="3">
+                        <Label text="Свободных клеток (%):" GridPane.rowIndex="2">
                            <GridPane.margin>
                               <Insets right="5.0" />
                            </GridPane.margin>
                         </Label>
-                        <TextField fx:id="freeCellsCountLabel" text="60" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <TextField fx:id="freeCellsCountLabel" text="60" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <GridPane.margin>
                               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                            </GridPane.margin>
                         </TextField>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#startNewGame" text="Новая игра (SHIFT)" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
-                        <Label text="Длина стороны:" />
-                        <Label text="Высота блока:" GridPane.rowIndex="1" />
-                        <Label text="Ширина блока:" GridPane.rowIndex="2" />
-                        <TextField fx:id="sideLengthLabel" text="12" GridPane.columnIndex="1" />
-                        <TextField fx:id="blockHeightLabel" text="3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <TextField fx:id="blockWidthLabel" text="4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#startNewGame" text="Новая игра (SHIFT)" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                        <Label text="Высота блока:" />
+                        <Label text="Ширина блока:" GridPane.rowIndex="1" />
+                        <TextField fx:id="blockHeightLabel" text="3" GridPane.columnIndex="1" />
+                        <TextField fx:id="blockWidthLabel" text="4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
                   </GridPane>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />

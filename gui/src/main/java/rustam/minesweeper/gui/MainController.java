@@ -37,8 +37,6 @@ public class MainController extends Application {
     @FXML
     private ListView<String> eventLogList;
     @FXML
-    private TextField sideLengthLabel;
-    @FXML
     private TextField blockHeightLabel;
     @FXML
     private TextField blockWidthLabel;
@@ -68,15 +66,10 @@ public class MainController extends Application {
 
     @FXML
     void startNewGame() {
-        int sideLength = Integer.parseInt(sideLengthLabel.getText());
         int blockHeight = Integer.parseInt(blockHeightLabel.getText());
         int blockWidth = Integer.parseInt(blockWidthLabel.getText());
+        int sideLength = blockHeight * blockWidth;
         int freeCellPercent = Integer.parseInt(freeCellsCountLabel.getText());
-
-        if (blockHeight * blockWidth != sideLength) {
-            log("Неверный размер поля");
-            return;
-        }
 
         FieldSize fieldSize = new FieldSize(sideLength, sideLength);
         FieldSize blockSize = new FieldSize(blockHeight, blockWidth);
