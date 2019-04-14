@@ -155,7 +155,7 @@ public class MainController extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../../../MainWindow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MainWindow.fxml"));
         primaryStage.setTitle("Судоку");
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
